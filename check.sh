@@ -1,5 +1,10 @@
 #!/bin/bash
 
+#date:20190308
+#author:lzh
+#description:对比当前目录下备份的.vimrc,.bashrc和当前家目录中的.vimrc,.bashrc,如果不相同,会给出提示是否用家目录中的.vimrc..bashrc覆盖当前目录下的
+
+
 checkfile=(	~/.vimrc ~/.bashrc)
 
 #echo ${#checkfile[@]}
