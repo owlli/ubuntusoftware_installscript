@@ -1,3 +1,5 @@
+"在vimrc中,"代表注释
+"在选项前加no一般代表取消这个选项,比如"set hlsearch"代表高亮显示搜索结果,"set nohlsearch"代表取消高亮显示搜索结果
 "三种缩进方式:
 "set autoindent,每行的缩进值与上一行相等
 "set ai
@@ -45,6 +47,16 @@ set ic sc
 "set noic
 " 高亮显示匹配的括号,默认已开启
 set showmatch
+"设置自动备份,如果vim修改一个名为filename文件后,则源文件会被另存成一个档名为filename~的档案
+"set backup
+"是否在左下角显示--INSERT--之类的提示,默认启用
+"set showmode
+"一般来说,如果我们按下i进入编辑模式后,可以利用退格键(backspace)来删除任意字符的.但是,某些distribution则不许如此.此时,我们就可以透过backspace来设定.当backspace为2时,就是可以删除任意值;0或1时,仅可删除刚刚输入的字符,而无法删除原本就已经存在的文字了
+"set backspace=(012)
+"显示不同的颜色色调,ubuntu默认为dark
+"set bg=dark
+"set bg=light
+
 
 set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
 "set termencoding=utf-8

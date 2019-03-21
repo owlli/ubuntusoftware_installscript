@@ -60,10 +60,13 @@ sudo apt-get install shutter -y
 sudo apt install nmap -y
 
 #不安装这个编译s5p6818的buildroot文件系统时会报错,提示"makeinfo:Command not found"
-sudo apt install texinfo
+sudo apt install texinfo -y
 
 #安装mkimage等工具
-sudo apt-get install u-boot-tools
+sudo apt-get install u-boot-tools -y
+
+#可以使用errno -l命令打印所有error number
+sudo apt install moreutils -y
 
 #待安装
 #
