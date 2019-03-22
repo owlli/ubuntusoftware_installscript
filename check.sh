@@ -16,7 +16,7 @@ diff -Naur ${checkfile[$i]##*/} ${checkfile[$i]}
 if [ $? != 0 ];then
 	read -p "${checkfile[$i]##*/} 和 ${checkfile[$i]} 内容不相同,是否用${checkfile[$i]}覆盖当前目录下的${checkfile[$i]##*/}? [Y/n] " yorn
 	if [ ${yorn} == "y" -o ${yorn} == "Y" ];then
-		mv ${checkfile[$i]} ${checkfile[$i]##*/}
+		cp ${checkfile[$i]} ${checkfile[$i]##*/}
 	elif [ ${yorn} == "n" -o ${yorn} == "N" ];then
 		echo "取消使用${checkfile[$i]}覆盖当前目录下的${checkfile[$i]##*/}"
 	else
