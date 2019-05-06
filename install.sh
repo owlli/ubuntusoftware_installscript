@@ -68,6 +68,9 @@ sudo apt-get install u-boot-tools -y
 #可以使用errno -l命令打印所有error number
 sudo apt install moreutils -y
 
+#查看io工具
+sudo apt install iotop -y
+
 #待安装
 #
 #搜狗输入法
