@@ -122,6 +122,7 @@ export HISTTIMEFORMAT='%F %T '
 export PATH=/home/lzh/bin:$PATH
 #export PATH=/home/lzh/s5p6818/s5p6818sdk_lzy1/Linux/src/uboot/tools:$PATH
 export PATH=/home/lzh/s5p6818/s5p6818sdk_lzy1/package/tools/4.5.1/bin:$PATH
+export PATH=/home/lzh/bin/gcc-arm-none-eabi-4_9-2014q4/bin:$PATH
 export http_proxy="127.0.0.1:8118"
 export https_proxy=$http_proxy
 export ftp_proxy=$http_proxy
