@@ -61,6 +61,15 @@ sudo apt install moreutils -y
 sudo apt install iotop -y
 #shadowsocks
 sudo apt install shadowsocks -y
+#安装非常好用的截图工具flameshot
+sudo apt-get install flameshot -y
+#安装类似windows上画图的工具kolourpaint
+sudo apt-get install  kolourpaint4 -y
+#安装黏贴板管理工具
+sudo apt-get install clipit
+
+
+
 #待安装
 #
 #搜狗输入法

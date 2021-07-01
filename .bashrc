@@ -126,7 +126,33 @@ export PATH=/home/lzh/bin/gcc-arm-none-eabi-4_9-2014q4/bin:$PATH
 export http_proxy="127.0.0.1:8118"
 export https_proxy=$http_proxy
 export ftp_proxy=$http_proxy
+export all_proxy="127.0.0.1:8118"
 #java-7
 #export JAVA_HOME="/usr/lib/jvm/java-7-openjdk-amd64"
 #java-8
 export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64"
+
+
+#如果想让终端使用256色,且终端支持256色
+if [ -e /lib/terminfo/x/xterm-256color ]
+then
+	export TERM='xterm-256color'
+else
+	export TERM='xterm-color'
+fi
+
+
+#golang的镜像库
+export GOPATH=/usr/local/go/bin/
+
+
+# colourful man page
+export LESS_TERMCAP_mb=$'\E[01;34m'
+export LESS_TERMCAP_md=$'\E[01;31m'
+export LESS_TERMCAP_me=$'\E[0m'
+export LESS_TERMCAP_us=$'\E[01;32m'
+export LESS_TERMCAP_ue=$'\E[0m'
+export LESS_TERMCAP_so=$'\E[01;36;44m'
+export LESS_TERMCAP_se=$'\E[0m'
+
+
